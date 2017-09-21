@@ -108,7 +108,12 @@ client.on('message', function(message) {
       })
     }
   }
+  if(command === 'pingtime'){
+	  message.channel.send("Pong! Response Time: " + client.ping + "mms");
+  }
 
+  
+  
 });
 
 client.login(config.token);
